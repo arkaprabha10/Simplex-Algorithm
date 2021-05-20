@@ -1,1 +1,1 @@
-# Simplex-Algiorithm
+# Simplex-Algorithm
