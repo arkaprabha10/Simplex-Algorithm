@@ -18,15 +18,22 @@ Number of rows in the input file matrix (nL) = 50 + 1 =51
 Number of columns in the input file matrix (nC) = 50 + 60 + 1 =121
 
 ## Serial version: Algorithm/serial_final.cpp
-To compile: g++ -std=c++11 serial_final.cpp -o s
+To compile: 
+    
+    g++ -std=c++11 serial_final.cpp -o s
 
-To execute: ./s name_50x60.txt
+To execute serial code for name_50x60.txt:   
+    
+    ./s name_50x60.txt
 
 
 ## Parallel version: Algorithm/openmp_final.cpp
 Here, in addition to the filename we also need to specify the number of threads and the chunk size for scheduling as the command line arguments
 
-To compile: g++ -std=c++11 openmp_final.cpp -fopenmp -o p
+To compile: 
 
-Execution format: ./executable <name of the file> <no. of threads> <chunk size>
-To execute : ./p name_50x60.txt 4 4
+    g++ -std=c++11 openmp_final.cpp -fopenmp -o p
+
+To execute parallel code for name_50x60.txt with 4 threads and chunkSize=8:   
+    
+    ./p name_50x60.txt 4 8
