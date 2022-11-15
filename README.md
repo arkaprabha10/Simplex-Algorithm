@@ -28,5 +28,5 @@ Here, in addition to the filename we also need to specify the number of threads 
 
 To compile: g++ -std=c++11 openmp_final.cpp -fopenmp -o p
 
-Execution format: ./executable <filename> <no. of threads> <chunksize>
+Execution format: ./executable <name of the file> <no. of threads> <chunk size>
 To execute : ./p name_50x60.txt 4 4
